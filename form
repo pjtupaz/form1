@@ -1,0 +1,36 @@
+# form1
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title> </title>
+<script type="text/javascript">
+	
+	function fieldCountry () {
+		var field = document.getElementById("country").value
+		var regex = /^[A-Za-z] {3}$/;
+		
+		if (regex.test(fieled)) //test is
+			document.getElementById("message1").innerHTML="Input accepted";
+		 else 
+			document.getElementById("message1").innerHTML="Please use a three lettter country code";
+				
+	}
+	</script>
+</head>
+
+<body>
+
+
+
+	Please input your three letter Country code js:
+	<input id="country" type="text" onblur="fieldCountry();"/> <span id="message1"> </br>
+	
+	<input type="submit" value="Submit">
+	
+</body>
+
+
+</html>
